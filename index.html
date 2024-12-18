@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day schedule</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+   <header>
+        <h2>Day Schedule</h2>
+    </header>
+
+    <div class="container" id="container">
+
+    <div id="container-item" class="container-item">
+        <h3 id="title">Manager appoinment</h3>
+        <p id="date">22-06-2025</p>
+        <p id="time">11:30 AM</p>
+        <p id="location">Erode</p>
+        <p id="describe">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum libero reiciendis 
+            ratione porro ad doloribus?</p>
+        <button onclick="del(event)" id="del">Delete</button>
+    </div>
+
+</div>
+    <div id="overlay"></div>
+    <div class="addBox" id="addBox">
+        <form action="">
+            <h3>Add your schedule</h3>
+            <input type="text" id="input-title"  placeholder="Title" required>
+            <input type="date" id="input-date" required> 
+            <input type="time" id="input-time" required>
+            <input type="text" id="input-location" required placeholder="Location">
+            <textarea id="input-description" placeholder="Write here..."  rows="4" cols="30"></textarea> 
+            <button id="save" >Save</button>
+            <button id="cancel">Cancel</button>
+        </form>
+    </div>
+    <button id="addBtn" >+</button> 
+
+    <script src="script.js"></script> 
+</body>
+</html>
